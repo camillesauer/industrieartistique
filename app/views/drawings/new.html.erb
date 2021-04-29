@@ -1,0 +1,15 @@
+<div class="">
+    <%= simple_form_for(@drawing) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+        <div class="form-inputs">
+          <h3 class="title-new">Ajouter un Dessin</h3>
+          <h5>Titre</h5>
+            <%= f.input :title %>
+        </div>
+
+        <div class="form-actions">
+            <%= f.button :submit, class: "btn btn-danger title-new" %>
+        </div>
+    <% end %>
+</div>

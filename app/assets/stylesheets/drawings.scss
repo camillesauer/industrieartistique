@@ -1,3 +1,67 @@
-// Place all the styles related to the drawings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.display-grid-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  color:red;
+  justify-items: center;
+}
+
+.connect_btn img{
+  width: 30px;
+  margin:15px;
+  height:auto;
+
+}
+
+.title-d{
+  font-size: 12px;
+  text-align:center;
+  border-width:2px;
+  border-style:dotted;
+  border-color:black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.gif-t{
+height:50px !important;
+width:auto !important;
+text-align: center !important;
+}
+
+.gif-t img{
+text-align: center !important;
+}
+
+.title-d a{
+  color:red;
+}
+
+.btn a{
+  font-size: 12px;
+  color:black;
+}
+
+.connect_btn {
+  text-align: right;
+}
+
+.up-btn{
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
+.top-btn{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.top-btn img a{
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+}
+
+
