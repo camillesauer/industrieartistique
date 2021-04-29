@@ -25,7 +25,12 @@
             <div class="btn"><%= link_to "Editer", edit_drawing_path(drawing.id)%></div>
           </div>
         <% end %>
-        <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+        <% if drawing.title_2 %>
+          <h1 class="title-d" itemprop="name"><%= drawing.title_2 %></h1>
+        <% end %>
+        <% if drawing.title %>
+          <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+        <% end %>
       </div>
     <% end %>
 
