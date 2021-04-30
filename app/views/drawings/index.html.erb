@@ -27,11 +27,12 @@
         <% end %>
         <% unless drawing.title_2.present? %>
          <h1 class="title-b"> Default </h1>
-        <% else %>
-          <h1 class="title-e"><%= drawing.title_2 %></h1>
+          <% else %>
+            <h1 class="title-e"><%= drawing.title_2 %></h1>
         <% end %>
-        <% if drawing.title %>
-          <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+        <% unless drawing.title.present? %>
+          <% else %>
+            <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
         <% end %>
       </div>
     <% end %>
