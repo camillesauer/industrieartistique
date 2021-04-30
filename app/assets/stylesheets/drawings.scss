@@ -42,11 +42,22 @@
   margin: 10px;
 }
 
-.gif-t{
-height:50px !important;
-width:auto !important;
-text-align: center !important;
+@media screen and (min-width: 201px) and (max-width: 400px) {
+  .gif-t{
+  height:40px !important;
+  width:auto !important;
+  text-align: center !important;
 }
+}
+
+@media screen and (min-width: 401px){
+  .gif-t{
+  height:50px !important;
+  width:auto !important;
+  text-align: center !important;
+}
+}
+
 
 .gif-t img{
 text-align: center !important;
