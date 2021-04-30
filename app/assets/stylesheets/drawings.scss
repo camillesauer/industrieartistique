@@ -37,6 +37,17 @@
   margin:30px;
 }
 
+.img-show img{
+  width:300px !important;
+  height:auto !important;
+  margin:50px;
+}
+
+.img-show img:hover{
+  width:500px !important;
+  height:auto !important;
+  margin:50px;
+}
 
 @media screen and (min-width: 200px) and (max-width: 600px){
 .flex-dr {
@@ -49,18 +60,6 @@
   justify-content:space-between;
   align-items: center;
 }}
-
-.img-show img{
-  width:300px !important;
-  height:auto !important;
-  margin:50px;
-}
-
-.img-show img:hover{
-  width:500px !important;
-  height:auto !important;
-  margin:50px;
-}
 
 .title-d{
   font-size: 12px;
