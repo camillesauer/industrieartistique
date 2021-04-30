@@ -1,1 +1,47 @@
-edit.html.erb
+
+<div class="">
+    <%= simple_form_for(@drawing) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+        <div class="form-inputs">
+          <h3 class="title-new">Modifier un Dessin</h3>
+          <h5>Titre</h5>
+            <%= f.input :title %>
+            <%= f.input :title_2 %>
+          <h5>Image</h5>
+            <%= f.input :image_1 %>
+            <%= f.input :image_2 %>
+            <%= f.input :image_3 %>
+            <%= f.input :image_4 %>
+            <%= f.input :image_5 %>
+            <%= f.input :image_6 %>
+            <%= f.input :image_7 %>
+            <%= f.input :image_8 %>
+            <%= f.input :image_9 %>
+            <%= f.input :image_10 %>
+            <%= f.input :image_11 %>
+            <%= f.input :image_12 %>
+            <%= f.input :image_13 %>
+            <%= f.input :image_14 %>
+          <h5>Légende</h5>
+            <%= f.input :legend_1 %>
+            <%= f.input :legend_2 %>
+            <%= f.input :legend_3 %>
+            <%= f.input :legend_4 %>
+            <%= f.input :legend_5 %>
+            <%= f.input :legend_6 %>
+            <%= f.input :legend_7 %>
+            <%= f.input :legend_8 %>
+            <%= f.input :legend_9 %>
+            <%= f.input :legend_10 %>
+            <%= f.input :legend_11 %>
+            <%= f.input :legend_12 %>
+            <%= f.input :legend_13 %>
+            <%= f.input :legend_14 %>
+        </div>
+
+        <div class="form-actions">
+            <%= f.submit "Save changes", class: "btn btn-danger title-new" %>
+        </div>
+    <% end %>
+</div>
