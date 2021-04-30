@@ -4,6 +4,13 @@
   height:auto;
 }
 
+.test{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
 .title-d{
   font-size: 12px;
   text-align:center;
@@ -60,9 +67,18 @@
 }
 }
 
+@media screen and (min-width: 200px) and (max-width: 950px){
+#exp{
+    display: none;
+}
+}
 
 .gif-t img{
 text-align: center !important;
+}
+
+.img-top{
+width: 900px;
 }
 
 .title-d a{

@@ -1,3 +1,4 @@
+
 <div class='connect_btn'>
  <% if user_signed_in? %>
           <%= link_to(image_tag("btn3.png", alt: "Camille Sauer - all rights reserved."), destroy_user_session_path, method: :delete) %>
@@ -5,37 +6,41 @@
           <%= link_to(image_tag("btn3.png", alt: "Camille Sauer - all rights reserved."), new_user_session_path) %>
     <% end %>
  </div>
- <div class='top-btn'>
-  <img class='gif-t' alt="Camille Sauer - all rights reserved." src="https://res.cloudinary.com/dft5iblyz/image/upload/v1619786407/ezgif.com-gif-maker-2_hmofak.gif">
+<div  class="test">
+   <div class='top-btn'>
+    <img class='gif-t' alt="Camille Sauer - all rights reserved." src="https://res.cloudinary.com/dft5iblyz/image/upload/v1619786407/ezgif.com-gif-maker-2_hmofak.gif">
 
- </div>
-  <% if user_signed_in? %>
-    <div class="btn"><%= link_to "Ajouter", new_drawing_path %></div>
-  <% end %>
-
-  <div class="display-grid-card">
-
-    <% @drawings.each do |drawing| %>
-      <div class="drawing">
-        <% if user_signed_in? %>
-          <div class ="up-btn">
-            <div class="btn"><%= link_to 'Supprimer', drawing_path(drawing),
-              method: :delete,
-              data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
-            <div class="btn"><%= link_to "Editer", edit_drawing_path(drawing.id)%></div>
-          </div>
-        <% end %>
-        <% unless drawing.title_2.present? %>
-          <% else %>
-            <h1 class="title-e"><%= drawing.title_2 %></h1>
-        <% end %>
-        <% unless drawing.title.present? %>
-          <% else %>
-            <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
-        <% end %>
-      </div>
+   </div>
+    <% if user_signed_in? %>
+      <div class="btn"><%= link_to "Ajouter", new_drawing_path %></div>
     <% end %>
 
-  </div>
+    <div class="display-grid-card">
+      <% @drawings.each do |drawing| %>
+        <div class="drawing">
+          <% if user_signed_in? %>
+            <div class ="up-btn">
+              <div class="btn"><%= link_to 'Supprimer', drawing_path(drawing),
+                method: :delete,
+                data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
+              <div class="btn"><%= link_to "Editer", edit_drawing_path(drawing.id)%></div>
+            </div>
+          <% end %>
+          <% unless drawing.title_2.present? %>
+            <% else %>
+              <h1 class="title-e"><%= drawing.title_2 %></h1>
+          <% end %>
+          <% unless drawing.title.present? %>
+            <% else %>
+              <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+          <% end %>
+        </div>
+      <% end %>
 
-
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  <img id='exp' class="img-top" src="https://res.cloudinary.com/dft5iblyz/image/upload/v1619812053/A0_Copy_svjmqv.jpg" alt="">
+</div>
