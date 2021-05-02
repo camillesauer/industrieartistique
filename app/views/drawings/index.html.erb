@@ -28,11 +28,17 @@
           <% end %>
           <% unless drawing.title_2.present? %>
             <% else %>
-              <h1 class="title-e"><%= drawing.title_2 %></h1>
+              <div class='conf'>
+                <h1 class="title-e"><%= drawing.title_2 %></h1>
+                <%=  image_tag("https://res.cloudinary.com/dft5iblyz/image/upload/v1619988726/code_iwbplt.png", alt: "Camille Sauer - all rights reserved.") %>
+              </div>
           <% end %>
           <% unless drawing.title.present? %>
             <% else %>
-              <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+              <div class='conf'>
+                <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
+                <%= image_tag("#{drawing.image_1}") %>
+              </div>
           <% end %>
         </div>
       <% end %>

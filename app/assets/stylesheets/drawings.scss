@@ -2,6 +2,19 @@
   text-align:center;
 }
 
+.conf{
+text-align: center;
+border-width: 2px;
+border-style: dotted;
+color:  black;
+margin: 10px;
+}
+
+.conf img{
+  width:  140px;
+  height:140px;
+
+}
 
 .connect_btn img{
   width: 30px;
@@ -45,26 +58,18 @@
 .title-d{
   font-size: 12px;
   text-align:center;
-  border-width:2px;
-  border-style:dotted;
-  border-color:black;
   padding: 15px;
   padding-left: 30px !important;
   padding-right: 30px !important;
-  margin: 10px;
   width: 140px;
 }
 
 .title-e {
   font-size: 12px;
   text-align:center;
-  border-width:2px;
-  border-style:dotted;
-  border-color:black;
   padding: 15px;
   padding-left: 30px !important;
   padding-right: 30px !important;
-  margin: 10px;
   color:black;
   width: 140px;
 }
