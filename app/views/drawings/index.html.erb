@@ -37,7 +37,7 @@
             <% else %>
               <div class='conf'>
                 <h1 class='title-d'><%= link_to drawing.title, drawing_path(drawing)%></h1>
-                <%= image_tag("#{drawing.image_1}") %>
+                <%= link_to image_tag("#{drawing.image_1}"), drawing_path(drawing) %>
               </div>
           <% end %>
         </div>
