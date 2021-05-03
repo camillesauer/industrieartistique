@@ -7,8 +7,8 @@
     <% end %>
  </div>
 <div  class="test">
-   <div class='top-btn'>
-    <h3>BIENVENUE DANS <br> <br>L'INDUSTRIE ARTISTIQUE</h3>
+   <div class='top-btn  echo'>
+    <%=  image_tag("test.png", alt: "Camille Sauer - all rights reserved.") %>
    </div>
     <% if user_signed_in? %>
       <div class="btn"><%= link_to "Ajouter", new_drawing_path %></div>
