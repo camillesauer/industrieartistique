@@ -1,38 +1,42 @@
 
 <div class="btn"><%= link_to "↖ Retour", drawings_path %></div>
 <h1 class='title-show'>×<%=@drawing.title%></h1>
-<div class='flex-dr  img-show'>
-   <%= image_tag("#{@drawing.image_7}") %>
-   <%= image_tag("#{@drawing.image_2}") %>
-</div>
-<br>
-<div class='flex-dr img-show'>
-   <%= image_tag("#{@drawing.image_3}") %>
-   <%= image_tag("#{@drawing.image_4}") %>
-</div>
-<br>
-<div class='flex-dr img-show'>
-   <%= image_tag("#{@drawing.image_5}") %>
-   <%= image_tag("#{@drawing.image_6}") %>
-</div>
-
-<div class='flex-rsp img-show-rsp'>
-   <%= image_tag("#{@drawing.image_1}") %>
-   <%= image_tag("#{@drawing.image_2}") %>
-</div>
-<br>
-<div class='flex-rsp img-show-rsp'>
-   <%= image_tag("#{@drawing.image_3}") %>
-   <%= image_tag("#{@drawing.image_4}") %>
-</div>
-<br>
-<div class='flex-rsp img-show-rsp'>
-   <%= image_tag("#{@drawing.image_5}") %>
-   <%= image_tag("#{@drawing.image_6}") %>
-</div>
-<div class='t-ic'>
+<div class='flex-dr'>
+   <div class="flex-rsp flex-case img-show">
+     <div>
+      <%= image_tag("#{@drawing.image_7}") %>
+      <p class="p-s"><%=@drawing.legend_7 %></p>
+    </div>
+     <div>
+      <%= image_tag("#{@drawing.image_2}") %>
+      <p class="p-s"><%=@drawing.legend_2%></p>
+    </div>
+  </div>
+   <div class="flex-rsp flex-case img-show">
+     <div>
+      <%= image_tag("#{@drawing.image_3}") %>
+      <p class="p-s"><%=@drawing.legend_3 %></p>
+    </div>
+     <div>
+      <%= image_tag("#{@drawing.image_4}") %>
+      <p class="p-s"><%=@drawing.legend_4%></p>
+    </div>
+  </div>
+   <div class="flex-rsp flex-case img-show">
+     <div>
+      <%= image_tag("#{@drawing.image_5}") %>
+      <p class="p-s"><%=@drawing.legend_5 %></p>
+    </div>
+     <div>
+      <%= image_tag("#{@drawing.image_5}") %>
+      <p class="p-s"><%=@drawing.legend_5%></p>
+    </div>
+  </div>
+  <br>
+    <div class='t-ic'>
          <a class='icon' href="mailto:camille-sauer@hotmail.fr"><%=  image_tag("mail.png", alt: "Camille Sauer - all rights reserved.") %></a>
-     <a class='icon' href="https://www.instagram.com/camillesauerart/"><%=  image_tag("instagram.png", alt: "Camille Sauer - all rights reserved.") %></a>
+         <a class='icon' href="https://www.instagram.com/camillesauerart/"><%=  image_tag("instagram.png", alt: "Camille Sauer - all rights reserved.") %></a>
+    </div>
 </div>
 
 
