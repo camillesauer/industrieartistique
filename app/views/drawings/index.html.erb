@@ -7,12 +7,12 @@
     <% end %>
  </div>
 <div  class="test">
-  <br>
    <div class='top-btn  echo'>
     <%=  image_tag("test.png", alt: "Camille Sauer - all rights reserved.") %>
    </div>
-   <br>
-    <br>
+   <div class='top-btn  rp'>
+    <%=  image_tag("rp.png", alt: "Camille Sauer - all rights reserved.") %>
+   </div>
     <% if user_signed_in? %>
       <div class="btn"><%= link_to "Ajouter", new_drawing_path %></div>
     <% end %>
