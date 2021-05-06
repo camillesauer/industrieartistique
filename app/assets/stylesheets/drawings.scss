@@ -453,7 +453,7 @@ width: 800px;
 
 @media screen and (min-width: 301px) and (max-width: 400px) {
 .img-show img{
-  width:250px !important;
+  width:300px !important;
   height:auto !important;
   margin:50px;
   margin-bottom:20px;
@@ -471,7 +471,7 @@ width: 800px;
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
 .img-show img{
-  width:150px !important;
+  width:400px !important;
   height:auto !important;
   margin:50px;
   margin-bottom:20px;
@@ -639,7 +639,7 @@ width: 800px;
 
 @media screen and (min-width: 301px) and (max-width: 400px) {
 .img-show img:hover{
-  width:280px !important;
+  width:320px !important;
   height:auto !important;
   margin:50px;
   margin-bottom:20px;
@@ -648,7 +648,7 @@ width: 800px;
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
 .img-show img:hover{
-  width:350px !important;
+  width:420px !important;
   height:auto !important;
   margin:50px;
   margin-bottom:20px;
@@ -864,9 +864,15 @@ width: 800px;
 }
 
 .carousel-item{
-  margin: 50px;
+  text-align:center;
+  margin-top:50px;
+  margin-bottom: 20px;
 }
 
+.carousel-control-prev,
+.carousel-control-next{
+  align-items: flex-end; /* Aligns it at the bottom */
+}
 .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 40px !important;
     outline: black;
@@ -901,15 +907,16 @@ width: 800px;
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
 .carousel-item img{
-  width: 200px;
+  width: 300px;
   height:auto;
+  text-align:center !important;
 }
 }
 
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
 .carousel-item img{
-  width: 300px;
+  width: 400px;
   height:auto;
 }
 }
