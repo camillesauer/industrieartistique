@@ -2,6 +2,31 @@
 <div class="btn"><%= link_to "↖ Retour", drawings_path %></div>
 <h1 class='title-show'>×<%=@drawing.title%></h1>
 <div class='flex-dr'>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("#{@drawing.image_6}", alt: "Camille Sauer, all rights reserved") %>
+          <h1><%= @drawing.legend_6 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@drawing.image_8}", alt: "Camille Sauer, all rights reserved") %>
+          <h1 class=""><%= @drawing.legend_8 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@drawing.image_8}", alt: "Camille Sauer, all rights reserved") %>
+          <h1 class=""><%= @drawing.legend_8 %></h1>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+
    <div class="flex-rsp flex-case img-show">
      <div>
       <%= image_tag("#{@drawing.image_7}") %>
