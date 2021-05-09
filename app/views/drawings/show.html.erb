@@ -1,11 +1,18 @@
 
-<div class="btn"><%= link_to "↖ Retour", drawings_path %></div>
+<br>
+<div class="btn"><%= link_to "Retour", drawings_path %></div>
+<br>
 <h1 class='title-show'>×<%=@drawing.title%></h1>
+
 <div class='flex-dr'>
+<br>
+<br>
+<br>
+  <%= render "components/caroussel" %>
+  <br>
 
    <div class="flex-rsp flex-case img-show">
      <div>
-      <p class="p-d"><%=@drawing.legend_2 %></p>
       <%= image_tag("#{@drawing.image_7}") %>
       <p class="p-s"><%=@drawing.legend_7 %></p>
     </div>
@@ -34,29 +41,6 @@
       <p class="p-s"><%=@drawing.legend_5%></p>
     </div>
   </div>
-
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-          <%= image_tag("#{@drawing.image_6}", alt: "Camille Sauer, all rights reserved") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("#{@drawing.image_8}", alt: "Camille Sauer, all rights reserved") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("#{@drawing.image_8}", alt: "Camille Sauer, all rights reserved") %>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
-
   <br>
     <div class='t-ic'>
          <a class='icon' href="mailto:camille-sauer@hotmail.fr"><%=  image_tag("mail.png", alt: "Camille Sauer - all rights reserved.") %></a>
