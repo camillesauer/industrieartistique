@@ -25,6 +25,16 @@ development:
   <<: *default
   database: industrieartistique_development
 
+production:
+  <<: *default
+  database: industrieartistique_development
+  username: lynojnymmbdfwe
+  password: 0d549393c3470c9af2f78341bdd8f8d9b7bb843d6d00fc26030c3ad67b0dee2b
+  host: ec2-54-74-77-126.eu-west-1.compute.amazonaws.com
+  adapter: postgresql
+  port: 5432
+  DATABASE_URL=: postgres://lynojnymmbdfwe:0d549393c3470c9af2f78341bdd8f8d9b7bb843d6d00fc26030c3ad67b0dee2b@ec2-54-74-77-126.eu-west-1.compute.amazonaws.com:5432/df8mokfol674r7
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
