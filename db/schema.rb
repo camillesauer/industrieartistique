@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_26_185831) do
+ActiveRecord::Schema.define(version: 2021_05_26_190801) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -126,6 +126,8 @@ ActiveRecord::Schema.define(version: 2021_05_26_185831) do
     t.text "legend_50"
     t.text "title"
     t.text "title_2"
+    t.text "vimeo_1"
+    t.text "vimeo_2"
   end
 
   create_table "pages", force: :cascade do |t|
