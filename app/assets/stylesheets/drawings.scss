@@ -18,7 +18,78 @@ margin: 20px;
   height:140px;
 }
 
+@media (min-width: 200px) {
+.flex-dr iframe{
+width: 100px!important;
+height: auto !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
 
+
+@media (min-width: 300px) {
+.flex-dr iframe{
+width: 250px !important;
+height: 200px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 400px) {
+.flex-dr iframe{
+width: 300px !important;
+height: 150px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 500px) {
+.flex-dr iframe{
+width: 400px !important;
+height: 250px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 600px) {
+.flex-dr iframe{
+width: 500px !important;
+height: 350px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 700px) {
+.flex-dr iframe{
+width: 600px !important;
+height: 450px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+.flex-dr iframe{
+width: 750px !important;
+height: 550px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+@media (min-width: 1001px) {
+.flex-dr iframe{
+width: 850px !important;
+height: 550px !important;
+border-radius: 10px;
+margin: 30px;
+}
+}
 
 @media (min-width: 200px) {
 .test iframe{
