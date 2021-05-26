@@ -10,22 +10,22 @@
 <br>
   <%= render "components/caroussel" %>
   <br>
-  <% if @drawing.vimeo_1 != ""  %>
+
     <iframe width="845" height="560"
       src="<%= @drawing.vimeo_1 %>"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
-  <% end %>
-  <% if @drawing.vimeo_2 != ""  %>
+
+
     <iframe width="845" height="560"
       src="<%= @drawing.vimeo_2 %>"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
-  <% end %>
+
    <div class="flex-rsp flex-case img-show">
      <div>
       <%= image_tag("#{@drawing.image_7}") %>
