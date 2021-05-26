@@ -16,7 +16,14 @@
     <% if user_signed_in? %>
       <div class="btn"><%= link_to "Ajouter", new_drawing_path %></div>
     <% end %>
-
+     <iframe width="845" height="560"
+      src="https://www.youtube.com/embed/UylWIv3ILCU"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <br>
+    <br>
     <div class="display-grid-card">
       <% @drawings.each do |drawing| %>
         <div class="drawing">
