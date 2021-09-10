@@ -15,35 +15,51 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-         <%= image_tag("#{@drawing.image_18}", alt: "Camille Sauer, all rights reserved") %>
+        <% if @drawing.image_18 != ""  %>
+          <%= image_tag("#{@drawing.image_18}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
-         <%= image_tag("#{@drawing.image_19}", alt: "Camille Sauer, all rights reserved") %>
+        <% if @drawing.image_19 != ""  %>
+          <%= image_tag("#{@drawing.image_19}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
-         <%= image_tag("#{@drawing.image_20}", alt: "Camille Sauer, all rights reserved") %>
+        <% if @drawing.image_20 != ""  %>
+          <%= image_tag("#{@drawing.image_20}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
-         <%= image_tag("#{@drawing.image_21}", alt: "Camille Sauer, all rights reserved") %>
+        <% if @drawing.image_21 != ""  %>
+          <%= image_tag("#{@drawing.image_21}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
-         <%= image_tag("#{@drawing.image_22}", alt: "Camille Sauer, all rights reserved") %>
+        <% if @drawing.image_22 != ""  %>
+          <%= image_tag("#{@drawing.image_22}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
+        <% if @drawing.image_23 != ""  %>
          <%= image_tag("#{@drawing.image_23}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
+        <% if @drawing.image_24 != ""  %>
          <%= image_tag("#{@drawing.image_24}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
 
       <div class="item">
+        <% if @drawing.image_25 != ""  %>
          <%= image_tag("#{@drawing.image_25}", alt: "Camille Sauer, all rights reserved") %>
+        <% end %>
       </div>
     </div>
 
