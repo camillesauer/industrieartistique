@@ -36,7 +36,7 @@
               <div class="btn"><%= link_to "Editer", edit_drawing_path(drawing.id)%></div>
             </div>
           <% end %>
-          <% unless drawing.title_2.present? %>
+          <% unless drawing.title_2.present? and not drawing.title.present?%>
             <% else %>
               <div class='conf'>
                 <h1 class="title-e"><%= drawing.title_2 %></h1>
